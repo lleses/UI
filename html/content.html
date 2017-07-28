@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/content.css">
+<script src="../js/jquery-1.8.2.js"></script>
+<script>
+
+$(function(){
+	var _html = "";
+	for (var i = 1; i <= 25; i++) {
+		_html += "<span id='d00" + i + "'></span>";
+		if(i%12==0){
+			//_html += "<br style='clear: both;' />";
+		}
+	}
+	$("#david").html(_html);
+});
+
+</script>
+</head>
+<body>
+	<div id="david" style="margin-top:50px;"></div>
+</body>
+</html>
